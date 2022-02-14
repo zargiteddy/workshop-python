@@ -1,0 +1,1 @@
+print(n) # mencoba mengakses variabel yang tidak didefinisikan
