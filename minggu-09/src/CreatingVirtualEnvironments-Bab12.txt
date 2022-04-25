@@ -1,0 +1,21 @@
+membuat virtual environment:
+
+python3 -m venv tutorial-env
+
+----------------------------------------
+
+mengaktifkan virtual environment:
+
+source ~/envs/tutorial-env/bin/activate
+
+----------------------------------------
+
+menjalankan perintah 'python':
+
+zargiteddy@shield:~$ source tutorial-env/bin/activate
+(tutorial-env) zargiteddy@shield:~$ python
+Python 3.10.2 (main, Feb  5 2022, 12:29:58) [GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+import sys
+sys.path
+['', '/usr/local/lib/python310.zip', '/usr/local/lib/python3.10', '/usr/local/lib/python3.10/lib-dynload', '/home/zargiteddy/tutorial-env/lib/python3.10/site-packages']

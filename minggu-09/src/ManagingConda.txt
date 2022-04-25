@@ -1,0 +1,9 @@
+conda --version
+
+------------------
+
+conda update conda
+
+------------------
+
+Proceed ([y]/n)? y

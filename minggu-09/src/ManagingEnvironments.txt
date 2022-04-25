@@ -1,0 +1,20 @@
+conda create --name snowflakes biopython
+Proceed ([y]/n)? y
+
+------------------------------------------
+
+conda activate snowflakes
+
+------------------------------------------
+
+conda info --envs
+
+output:
+conda environments:
+
+    base           /home/username/Anaconda3
+    snowflakes   * /home/username/Anaconda3/envs/snowflakes
+
+------------------------------------------
+
+conda activate

@@ -1,0 +1,25 @@
+conda create --name snakes python=3.9
+
+------------------------------------------
+
+conda activate snakes
+
+------------------------------------------
+
+conda info --envs
+
+output:
+# conda environments:
+#
+base                     /home/username/anaconda3
+snakes                *  /home/username/anaconda3/envs/snakes
+snowflakes               /home/username/anaconda3/envs/snowflakes
+
+(snakes) $
+------------------------------------------
+
+python --version
+
+------------------------------------------
+
+conda activate

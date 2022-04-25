@@ -1,0 +1,83 @@
+(tutorial-env) zargiteddy@shield:~$ python -m pip install novas
+Collecting novas
+  Downloading novas-3.1.1.5.tar.gz (135 kB)
+     |████████████████████████████████| 135 kB 1.9 MB/s 
+Using legacy 'setup.py install' for novas, since package 'wheel' is not installed.
+Installing collected packages: novas
+    Running setup.py install for novas ... done
+Successfully installed novas-3.1.1.5
+
+-----------------------------------------------------
+
+(tutorial-env) zargiteddy@shield:~$ python -m pip install requests==2.6.0
+Collecting requests==2.6.0
+  Downloading requests-2.6.0-py2.py3-none-any.whl (469 kB)
+     |████████████████████████████████| 469 kB 794 kB/s 
+Installing collected packages: requests
+Successfully installed requests-2.6.0
+
+-----------------------------------------------------
+
+(tutorial-env) zargiteddy@shield:~$ python -m pip install --upgrade requests
+Requirement already satisfied: requests in ./tutorial-env/lib/python3.10/site-packages (2.6.0)
+Collecting requests
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Requirement already satisfied: charset-normalizer~=2.0.0 in ./tutorial-env/lib/python3.10/site-packages (from requests) (2.0.12)
+Requirement already satisfied: certifi>=2017.4.17 in ./tutorial-env/lib/python3.10/site-packages (from requests) (2021.10.8)
+Requirement already satisfied: idna<4,>=2.5 in ./tutorial-env/lib/python3.10/site-packages (from requests) (3.3)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in ./tutorial-env/lib/python3.10/site-packages (from requests) (1.26.9)
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.6.0
+    Uninstalling requests-2.6.0:
+      Successfully uninstalled requests-2.6.0
+Successfully installed requests-2.27.1
+
+-----------------------------------------------------
+
+(tutorial-env) zargiteddy@shield:~$ pip show requests
+Name: requests
+Version: 2.27.1
+Summary: Python HTTP for Humans.
+Home-page: https://requests.readthedocs.io
+Author: Kenneth Reitz
+Author-email: me@kennethreitz.org
+License: Apache 2.0
+Location: /home/zargiteddy/tutorial-env/lib/python3.10/site-packages
+Requires: charset-normalizer, urllib3, idna, certifi
+Required-by:
+
+-----------------------------------------------------
+
+(tutorial-env) zargiteddy@shield:~$ pip list
+Package            Version
+------------------ ---------
+certifi            2021.10.8
+charset-normalizer 2.0.12
+idna               3.3
+novas              3.1.1.5
+pip                21.2.4
+requests           2.27.1
+setuptools         58.1.0
+urllib3            1.26.9
+
+-----------------------------------------------------
+
+(tutorial-env) zargiteddy@shield:~$ pip freeze > requirements.txt
+(tutorial-env) zargiteddy@shield:~$ cat requirements.txt
+certifi==2021.10.8
+charset-normalizer==2.0.12
+idna==3.3
+novas==3.1.1.5
+requests==2.27.1
+urllib3==1.26.9
+
+-----------------------------------------------------
+
+(tutorial-env) zargiteddy@shield:~$ python -m pip install -r requirements.txt
+Requirement already satisfied: certifi==2021.10.8 in ./tutorial-env/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2021.10.8)
+Requirement already satisfied: charset-normalizer==2.0.12 in ./tutorial-env/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (2.0.12)
+Requirement already satisfied: idna==3.3 in ./tutorial-env/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (3.3)
+Requirement already satisfied: novas==3.1.1.5 in ./tutorial-env/lib/python3.10/site-packages (from -r requirements.txt (line 4)) (3.1.1.5)
+Requirement already satisfied: requests==2.27.1 in ./tutorial-env/lib/python3.10/site-packages (from -r requirements.txt (line 5)) (2.27.1)
+Requirement already satisfied: urllib3==1.26.9 in ./tutorial-env/lib/python3.10/site-packages (from -r requirements.txt (line 6)) (1.26.9)
