@@ -1,0 +1,1 @@
+postgresql://raden:REVEAL_PASSWORD@free-tier8.aws-ap-southeast-1.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full&options=--cluster=plains-sheep-1769

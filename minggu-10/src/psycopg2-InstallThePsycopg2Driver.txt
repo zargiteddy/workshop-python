@@ -1,0 +1,6 @@
+zargiteddy@shield:~$ pip install psycopg2-binary
+Collecting psycopg2-binary
+  Downloading psycopg2_binary-2.9.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+     |████████████████████████████████| 3.0 MB 507 kB/s 
+Installing collected packages: psycopg2-binary
+Successfully installed psycopg2-binary-2.9.3

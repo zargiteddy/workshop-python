@@ -1,0 +1,7 @@
+zargiteddy@shield:~$ git clone https://github.com/cockroachlabs/hello-world-python-psycopg2
+Cloning into 'hello-world-python-psycopg2'...
+remote: Enumerating objects: 73, done.
+remote: Counting objects: 100% (73/73), done.
+remote: Compressing objects: 100% (51/51), done.
+remote: Total 73 (delta 36), reused 51 (delta 21), pack-reused 0
+Unpacking objects: 100% (73/73), 16.28 KiB | 694.00 KiB/s, done.

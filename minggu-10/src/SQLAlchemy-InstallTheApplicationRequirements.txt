@@ -1,0 +1,30 @@
+zargiteddy@shield:~$ sudo apt install python3-virtualenv
+
+zargiteddy@shield:~$ virtualenv env
+created virtual environment CPython3.8.10.final.0-64 in 426ms
+  creator CPython3Posix(dest=/home/zargiteddy/env, clear=False, global=False)
+  seeder FromAppData(download=False, pip=latest, setuptools=latest, wheel=latest, pkg_resources=latest, via=copy, app_data_dir=/home/zargiteddy/.local/share/virtualenv/seed-app-data/v1.0.1.debian.1)
+  activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+
+zargiteddy@shield:~$ source env/bin/activate
+
+(env) zargiteddy@shield:~$ pip install -r requirements.txt
+Collecting certifi==2021.10.8
+  Using cached certifi-2021.10.8-py2.py3-none-any.whl (149 kB)
+Collecting charset-normalizer==2.0.12
+  Using cached charset_normalizer-2.0.12-py3-none-any.whl (39 kB)
+Collecting idna==3.3
+  Using cached idna-3.3-py3-none-any.whl (61 kB)
+Collecting novas==3.1.1.5
+  Using cached novas-3.1.1.5.tar.gz (135 kB)
+Collecting requests==2.27.1
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Collecting urllib3==1.26.9
+  Using cached urllib3-1.26.9-py2.py3-none-any.whl (138 kB)
+Building wheels for collected packages: novas
+  Building wheel for novas (setup.py) ... done
+  Created wheel for novas: filename=novas-3.1.1.5-cp38-cp38-linux_x86_64.whl size=169859 sha256=c6be6cbcbd58e0704fdaad551f74b7fee5d87583aac17c03a3fc0e2811c94aca
+  Stored in directory: /home/zargiteddy/.cache/pip/wheels/5f/3b/72/e7dba9d085106f46a87b5c1ce1405b6132fb10e343d8d312a0
+Successfully built novas
+Installing collected packages: certifi, charset-normalizer, idna, novas, urllib3, requests
+Successfully installed certifi-2021.10.8 charset-normalizer-2.0.12 idna-3.3 novas-3.1.1.5 requests-2.27.1 urllib3-1.26.9

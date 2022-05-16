@@ -1,0 +1,7 @@
+zargiteddy@shield:~$ git clone https://github.com/cockroachlabs/example-app-python-sqlalchemy/
+Cloning into 'example-app-python-sqlalchemy'...
+remote: Enumerating objects: 74, done.
+remote: Counting objects: 100% (74/74), done.
+remote: Compressing objects: 100% (45/45), done.
+remote: Total 74 (delta 32), reused 64 (delta 27), pack-reused 0
+Unpacking objects: 100% (74/74), 20.26 KiB | 864.00 KiB/s, done.

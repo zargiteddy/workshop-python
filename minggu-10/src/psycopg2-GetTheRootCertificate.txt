@@ -1,0 +1,4 @@
+zargiteddy@shield:~$ curl --create-dirs -o $HOME/.postgresql/root.crt -O https://cockroachlabs.cloud/clusters/ef3ce24c-78b4-4b58-932c-5b279aee2449/cert
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  2728    0  2728    0     0   7598      0 --:--:-- --:--:-- --:--:--  7620
