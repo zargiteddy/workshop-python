@@ -1,0 +1,10 @@
+(workshop) zargiteddy@shield:~/flask-tutorial$ export FLASK_APP=flaskr
+(workshop) zargiteddy@shield:~/flask-tutorial$ export FLASK_ENV=development
+(workshop) zargiteddy@shield:~/flask-tutorial$ flask run
+ * Serving Flask app 'flaskr' (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 406-411-116

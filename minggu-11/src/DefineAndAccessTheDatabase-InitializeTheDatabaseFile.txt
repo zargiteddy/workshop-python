@@ -1,0 +1,4 @@
+(workshop) zargiteddy@shield:~/flask-tutorial$ export FLASK_APP=flaskr
+(workshop) zargiteddy@shield:~/flask-tutorial$ export FLASK_ENV=development
+(workshop) zargiteddy@shield:~/flask-tutorial$ flask init-db
+Initialized the database.

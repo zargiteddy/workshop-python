@@ -1,0 +1,51 @@
+(workshop) zargiteddy@shield:~$ conda install flask
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/zargiteddy/miniconda3/envs/workshop
+
+  added / updated specs:
+    - flask
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    click-8.0.4                |  py310h06a4308_0         156 KB
+    dataclasses-0.8            |     pyh6d0b6a4_7           8 KB
+    flask-2.0.3                |     pyhd3eb1b0_0          76 KB
+    itsdangerous-2.0.1         |     pyhd3eb1b0_0          18 KB
+    jinja2-3.0.3               |     pyhd3eb1b0_0         106 KB
+    markupsafe-2.0.1           |  py310h7f8727e_0          35 KB
+    werkzeug-2.0.3             |     pyhd3eb1b0_0         221 KB
+    ------------------------------------------------------------
+                                           Total:         619 KB
+
+The following NEW packages will be INSTALLED:
+
+  click              pkgs/main/linux-64::click-8.0.4-py310h06a4308_0
+  dataclasses        pkgs/main/noarch::dataclasses-0.8-pyh6d0b6a4_7
+  flask              pkgs/main/noarch::flask-2.0.3-pyhd3eb1b0_0
+  itsdangerous       pkgs/main/noarch::itsdangerous-2.0.1-pyhd3eb1b0_0
+  jinja2             pkgs/main/noarch::jinja2-3.0.3-pyhd3eb1b0_0
+  markupsafe         pkgs/main/linux-64::markupsafe-2.0.1-py310h7f8727e_0
+  werkzeug           pkgs/main/noarch::werkzeug-2.0.3-pyhd3eb1b0_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+flask-2.0.3          | 76 KB     | ######################################### | 100% 
+itsdangerous-2.0.1   | 18 KB     | ######################################### | 100% 
+werkzeug-2.0.3       | 221 KB    | ######################################### | 100% 
+markupsafe-2.0.1     | 35 KB     | ######################################### | 100% 
+dataclasses-0.8      | 8 KB      | ######################################### | 100% 
+click-8.0.4          | 156 KB    | ######################################### | 100% 
+jinja2-3.0.3         | 106 KB    | ######################################### | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done

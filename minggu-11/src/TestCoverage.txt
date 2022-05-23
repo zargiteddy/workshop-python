@@ -1,0 +1,81 @@
+(workshop) zargiteddy@shield:~$ conda install -c conda-forge pytest-cov
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/zargiteddy/miniconda3/envs/workshop
+
+  added / updated specs:
+    - pytest-cov
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    attrs-21.4.0               |     pyhd8ed1ab_0          49 KB  conda-forge
+    ca-certificates-2022.5.18.1|       ha878542_0         144 KB  conda-forge
+    certifi-2022.5.18.1        |  py310hff52083_0         150 KB  conda-forge
+    coverage-6.3.2             |  py310h7f8727e_0         270 KB
+    iniconfig-1.1.1            |     pyh9f0ad1d_0           8 KB  conda-forge
+    openssl-1.1.1o             |       h166bdaf_0         2.1 MB  conda-forge
+    packaging-21.3             |     pyhd8ed1ab_0          36 KB  conda-forge
+    pluggy-1.0.0               |  py310hff52083_3          25 KB  conda-forge
+    py-1.11.0                  |     pyh6c4a22f_0          74 KB  conda-forge
+    pyparsing-3.0.9            |     pyhd8ed1ab_0          79 KB  conda-forge
+    pytest-7.1.2               |  py310hff52083_0         465 KB  conda-forge
+    pytest-cov-3.0.0           |     pyhd8ed1ab_0          21 KB  conda-forge
+    python_abi-3.10            |          2_cp310           4 KB  conda-forge
+    toml-0.10.2                |     pyhd8ed1ab_0          18 KB  conda-forge
+    tomli-2.0.1                |     pyhd8ed1ab_0          16 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:         3.4 MB
+
+The following NEW packages will be INSTALLED:
+
+  attrs              conda-forge/noarch::attrs-21.4.0-pyhd8ed1ab_0
+  coverage           pkgs/main/linux-64::coverage-6.3.2-py310h7f8727e_0
+  iniconfig          conda-forge/noarch::iniconfig-1.1.1-pyh9f0ad1d_0
+  packaging          conda-forge/noarch::packaging-21.3-pyhd8ed1ab_0
+  pluggy             conda-forge/linux-64::pluggy-1.0.0-py310hff52083_3
+  py                 conda-forge/noarch::py-1.11.0-pyh6c4a22f_0
+  pyparsing          conda-forge/noarch::pyparsing-3.0.9-pyhd8ed1ab_0
+  pytest             conda-forge/linux-64::pytest-7.1.2-py310hff52083_0
+  pytest-cov         conda-forge/noarch::pytest-cov-3.0.0-pyhd8ed1ab_0
+  python_abi         conda-forge/linux-64::python_abi-3.10-2_cp310
+  toml               conda-forge/noarch::toml-0.10.2-pyhd8ed1ab_0
+  tomli              conda-forge/noarch::tomli-2.0.1-pyhd8ed1ab_0
+
+The following packages will be UPDATED:
+
+  ca-certificates    pkgs/main::ca-certificates-2022.4.26-~ --> conda-forge::ca-certificates-2022.5.18.1-ha878542_0
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  certifi            pkgs/main::certifi-2022.5.18.1-py310h~ --> conda-forge::certifi-2022.5.18.1-py310hff52083_0
+  openssl              pkgs/main::openssl-1.1.1o-h7f8727e_0 --> conda-forge::openssl-1.1.1o-h166bdaf_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+pytest-cov-3.0.0     | 21 KB     | ######################################### | 100% 
+pluggy-1.0.0         | 25 KB     | ######################################### | 100% 
+pytest-7.1.2         | 465 KB    | ######################################### | 100% 
+pyparsing-3.0.9      | 79 KB     | ######################################### | 100% 
+tomli-2.0.1          | 16 KB     | ######################################### | 100% 
+openssl-1.1.1o       | 2.1 MB    | ######################################### | 100% 
+attrs-21.4.0         | 49 KB     | ######################################### | 100% 
+certifi-2022.5.18.1  | 150 KB    | ######################################### | 100% 
+ca-certificates-2022 | 144 KB    | ######################################### | 100% 
+python_abi-3.10      | 4 KB      | ######################################### | 100% 
+iniconfig-1.1.1      | 8 KB      | ######################################### | 100% 
+coverage-6.3.2       | 270 KB    | ######################################### | 100% 
+py-1.11.0            | 74 KB     | ######################################### | 100% 
+toml-0.10.2          | 18 KB     | ######################################### | 100% 
+packaging-21.3       | 36 KB     | ######################################### | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done

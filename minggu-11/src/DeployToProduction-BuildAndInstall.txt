@@ -1,0 +1,120 @@
+(workshop) zargiteddy@shield:~$ conda install -c conda-forge wheel
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/zargiteddy/miniconda3/envs/workshop
+
+  added / updated specs:
+    - wheel
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    wheel-0.37.1               |     pyhd8ed1ab_0          31 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:          31 KB
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  wheel                pkgs/main::wheel-0.37.1-pyhd3eb1b0_0 --> conda-forge::wheel-0.37.1-pyhd8ed1ab_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+wheel-0.37.1         | 31 KB     | ########################################################## | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+
+
+(workshop) zargiteddy@shield:~/flask-tutorial$ python setup.py bdist_wheel
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/flaskr
+copying flaskr/__init__.py -> build/lib/flaskr
+copying flaskr/auth.py -> build/lib/flaskr
+copying flaskr/db.py -> build/lib/flaskr
+copying flaskr/blog.py -> build/lib/flaskr
+running egg_info
+writing flaskr.egg-info/PKG-INFO
+writing dependency_links to flaskr.egg-info/dependency_links.txt
+writing requirements to flaskr.egg-info/requires.txt
+writing top-level names to flaskr.egg-info/top_level.txt
+reading manifest file 'flaskr.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files matching '*.pyc' found anywhere in distribution
+writing manifest file 'flaskr.egg-info/SOURCES.txt'
+copying flaskr/schema.sql -> build/lib/flaskr
+creating build/lib/flaskr/static
+copying flaskr/static/style.css -> build/lib/flaskr/static
+creating build/lib/flaskr/templates
+copying flaskr/templates/base.html -> build/lib/flaskr/templates
+creating build/lib/flaskr/templates/auth
+copying flaskr/templates/auth/login.html -> build/lib/flaskr/templates/auth
+copying flaskr/templates/auth/register.html -> build/lib/flaskr/templates/auth
+creating build/lib/flaskr/templates/blog
+copying flaskr/templates/blog/create.html -> build/lib/flaskr/templates/blog
+copying flaskr/templates/blog/index.html -> build/lib/flaskr/templates/blog
+copying flaskr/templates/blog/update.html -> build/lib/flaskr/templates/blog
+/home/zargiteddy/miniconda3/envs/workshop/lib/python3.10/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/flaskr
+creating build/bdist.linux-x86_64/wheel/flaskr/templates
+creating build/bdist.linux-x86_64/wheel/flaskr/templates/blog
+copying build/lib/flaskr/templates/blog/index.html -> build/bdist.linux-x86_64/wheel/flaskr/templates/blog
+copying build/lib/flaskr/templates/blog/create.html -> build/bdist.linux-x86_64/wheel/flaskr/templates/blog
+copying build/lib/flaskr/templates/blog/update.html -> build/bdist.linux-x86_64/wheel/flaskr/templates/blog
+creating build/bdist.linux-x86_64/wheel/flaskr/templates/auth
+copying build/lib/flaskr/templates/auth/login.html -> build/bdist.linux-x86_64/wheel/flaskr/templates/auth
+copying build/lib/flaskr/templates/auth/register.html -> build/bdist.linux-x86_64/wheel/flaskr/templates/auth
+copying build/lib/flaskr/templates/base.html -> build/bdist.linux-x86_64/wheel/flaskr/templates
+copying build/lib/flaskr/__init__.py -> build/bdist.linux-x86_64/wheel/flaskr
+copying build/lib/flaskr/auth.py -> build/bdist.linux-x86_64/wheel/flaskr
+copying build/lib/flaskr/db.py -> build/bdist.linux-x86_64/wheel/flaskr
+copying build/lib/flaskr/schema.sql -> build/bdist.linux-x86_64/wheel/flaskr
+copying build/lib/flaskr/blog.py -> build/bdist.linux-x86_64/wheel/flaskr
+creating build/bdist.linux-x86_64/wheel/flaskr/static
+copying build/lib/flaskr/static/style.css -> build/bdist.linux-x86_64/wheel/flaskr/static
+running install_egg_info
+Copying flaskr.egg-info to build/bdist.linux-x86_64/wheel/flaskr-1.0.0-py3.10.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/flaskr-1.0.0.dist-info/WHEEL
+creating 'dist/flaskr-1.0.0-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'flaskr/__init__.py'
+adding 'flaskr/auth.py'
+adding 'flaskr/blog.py'
+adding 'flaskr/db.py'
+adding 'flaskr/schema.sql'
+adding 'flaskr/static/style.css'
+adding 'flaskr/templates/base.html'
+adding 'flaskr/templates/auth/login.html'
+adding 'flaskr/templates/auth/register.html'
+adding 'flaskr/templates/blog/create.html'
+adding 'flaskr/templates/blog/index.html'
+adding 'flaskr/templates/blog/update.html'
+adding 'flaskr-1.0.0.dist-info/METADATA'
+adding 'flaskr-1.0.0.dist-info/WHEEL'
+adding 'flaskr-1.0.0.dist-info/top_level.txt'
+adding 'flaskr-1.0.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+
+
+$ pip install flaskr-1.0.0-py3-none-any.whl
+
+
+$ export FLASK_APP=flaskr
+$ flask init-db

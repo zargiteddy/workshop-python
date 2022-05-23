@@ -1,0 +1,73 @@
+(workshop) zargiteddy@shield:~/flask-tutorial$ pytest
+======================================== test session starts ========================================
+platform linux -- Python 3.10.4, pytest-7.1.2, pluggy-1.0.0
+rootdir: /home/zargiteddy/flask-tutorial, configfile: setup.cfg, testpaths: tests
+plugins: cov-3.0.0
+collected 24 items                                                                                  
+
+tests/test_auth.py F...F...                                                                   [ 33%]
+tests/test_blog.py .FFF.......F                                                               [ 83%]
+tests/test_db.py ..                                                                           [ 91%]
+tests/test_factory.py ..    
+
+
+(workshop) zargiteddy@shield:~/flask-tutorial$ pytest -v
+======================================== test session starts ========================================
+platform linux -- Python 3.10.4, pytest-7.1.2, pluggy-1.0.0 -- /home/zargiteddy/miniconda3/envs/workshop/bin/python
+cachedir: .pytest_cache
+rootdir: /home/zargiteddy/flask-tutorial, configfile: setup.cfg, testpaths: tests
+plugins: cov-3.0.0
+collected 24 items                                                                                  
+
+tests/test_auth.py::test_register FAILED                                                      [  4%]
+tests/test_auth.py::test_register_validate_input[--Username is required.] PASSED              [  8%]
+tests/test_auth.py::test_register_validate_input[a--Password is required.] PASSED             [ 12%]
+tests/test_auth.py::test_register_validate_input[test-test-already registered] PASSED         [ 16%]
+tests/test_auth.py::test_login FAILED                                                         [ 20%]
+tests/test_auth.py::test_login_validate_input[a-test-Incorrect username.] PASSED              [ 25%]
+tests/test_auth.py::test_login_validate_input[test-a-Incorrect password.] PASSED              [ 29%]
+tests/test_auth.py::test_logout PASSED                                                        [ 33%]
+tests/test_blog.py::test_index PASSED                                                         [ 37%]
+tests/test_blog.py::test_login_required[/create] FAILED                                       [ 41%]
+tests/test_blog.py::test_login_required[/1/update] FAILED                                     [ 45%]
+tests/test_blog.py::test_login_required[/1/delete] FAILED                                     [ 50%]
+tests/test_blog.py::test_author_required PASSED                                               [ 54%]
+tests/test_blog.py::test_exists_required[/2/update] PASSED                                    [ 58%]
+tests/test_blog.py::test_exists_required[/2/delete] PASSED                                    [ 62%]
+tests/test_blog.py::test_create PASSED                                                        [ 66%]
+tests/test_blog.py::test_update PASSED                                                        [ 70%]
+tests/test_blog.py::test_create_update_validate[/create] PASSED                               [ 75%]
+tests/test_blog.py::test_create_update_validate[/1/update] PASSED                             [ 79%]
+tests/test_blog.py::test_delete FAILED                                                        [ 83%]
+tests/test_db.py::test_get_close_db PASSED                                                    [ 87%]
+tests/test_db.py::test_init_db_command PASSED                                                 [ 91%]
+tests/test_factory.py::test_config PASSED                                                     [ 95%]
+tests/test_factory.py::test_hello PASSED                                                      [100%]
+
+
+(workshop) zargiteddy@shield:~/flask-tutorial$ coverage run -m pytest
+======================================== test session starts ========================================
+platform linux -- Python 3.10.4, pytest-7.1.2, pluggy-1.0.0
+rootdir: /home/zargiteddy/flask-tutorial, configfile: setup.cfg, testpaths: tests
+plugins: cov-3.0.0
+collected 24 items                                                                                  
+
+tests/test_auth.py F...F...                                                                   [ 33%]
+tests/test_blog.py .FFF.......F                                                               [ 83%]
+tests/test_db.py ..                                                                           [ 91%]
+tests/test_factory.py ..                                                                      [100%]
+
+
+(workshop) zargiteddy@shield:~/flask-tutorial$ coverage report
+Name                 Stmts   Miss Branch BrPart  Cover
+------------------------------------------------------
+flaskr/__init__.py      23      0      2      0   100%
+flaskr/auth.py          60      0     20      0   100%
+flaskr/blog.py          58      0     16      0   100%
+flaskr/db.py            25      0      6      0   100%
+------------------------------------------------------
+TOTAL                  166      0     44      0   100%
+
+
+(workshop) zargiteddy@shield:~/flask-tutorial$ coverage html
+Wrote HTML report to htmlcov/index.html

@@ -1,0 +1,2 @@
+(workshop) zargiteddy@shield:~$ mkdir flask-tutorial
+(workshop) zargiteddy@shield:~$ cd flask-tutorial

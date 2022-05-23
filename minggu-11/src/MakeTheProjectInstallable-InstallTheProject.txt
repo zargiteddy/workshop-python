@@ -1,0 +1,26 @@
+(workshop) zargiteddy@shield:~/flask-tutorial$ pip install -e .
+Obtaining file:///home/zargiteddy/flask-tutorial
+Requirement already satisfied: flask in /home/zargiteddy/miniconda3/envs/workshop/lib/python3.10/site-packages (from flaskr==1.0.0) (2.0.3)
+Requirement already satisfied: Werkzeug>=2.0 in /home/zargiteddy/miniconda3/envs/workshop/lib/python3.10/site-packages (from flask->flaskr==1.0.0) (2.0.3)
+Requirement already satisfied: Jinja2>=3.0 in /home/zargiteddy/miniconda3/envs/workshop/lib/python3.10/site-packages (from flask->flaskr==1.0.0) (3.0.3)
+Requirement already satisfied: click>=7.1.2 in /home/zargiteddy/miniconda3/envs/workshop/lib/python3.10/site-packages (from flask->flaskr==1.0.0) (8.0.4)
+Requirement already satisfied: itsdangerous>=2.0 in /home/zargiteddy/miniconda3/envs/workshop/lib/python3.10/site-packages (from flask->flaskr==1.0.0) (2.0.1)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/zargiteddy/miniconda3/envs/workshop/lib/python3.10/site-packages (from Jinja2>=3.0->flask->flaskr==1.0.0) (2.0.1)
+Installing collected packages: flaskr
+  Running setup.py develop for flaskr
+Successfully installed flaskr-1.0.0
+
+(workshop) zargiteddy@shield:~/flask-tutorial$ pip list
+Package      Version     Location
+------------ ----------- -------------------------------
+certifi      2022.5.18.1
+click        8.0.4
+Flask        2.0.3
+flaskr       1.0.0       /home/zargiteddy/flask-tutorial
+itsdangerous 2.0.1
+Jinja2       3.0.3
+MarkupSafe   2.0.1
+pip          21.2.4
+setuptools   61.2.0
+Werkzeug     2.0.3
+wheel        0.37.1
